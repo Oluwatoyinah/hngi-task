@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .links {
+      @apply font-inter text-center bg-link-gray py-6 leading-7 text-sm xl:text-lg font-semibold block rounded-lg border-[1px] border-link-gray border-solid h-[70px] hover:bg-[#D0D5DD] transition-all ease-in duration-300
+    }
+
+    .profile-text {
+      @apply text-primary not-italic font-inter leading-[30px] font-bold text-lg xl:text-xl
+    }
+  }
