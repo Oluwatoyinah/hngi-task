@@ -72,7 +72,7 @@ const Home = () => {
                         </li>
 
                         <li className="mb-6"> 
-                            <Link to='/contact' className='links'>
+                            <Link to='/contact' id='contact' className='links'>
                                 <button>
                                 Contact Me
                                 </button>

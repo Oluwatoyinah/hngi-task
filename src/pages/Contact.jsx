@@ -45,14 +45,14 @@ const Contact = () => {
              <div className="grid grid-cols-1 lg:grid-cols-2 mb-6 gap-6">
                 <div>
                   <label htmlFor="first_name" className='form-label'>First Name</label>
-                  <input type="text" value={values.first_name} onChange={handleChange} onBlur={handleBlur} name="first_name" id="first_name" placeholder='Enter your first Name' className={`form-input ${errors.first_name && touched.first_name && 'border-error'}`} />
+                  <input type="text" value={values.first_name} onChange={handleChange} onBlur={handleBlur} name="first_name" id="first_name" placeholder='Enter your first Name' className={`form-input ${errors.first_name && touched.first_name ? 'border-error' : ""}`} />
                   {
                     errors.first_name && touched.first_name && <p className='font-inter text-sm text-error mt-1'>{errors.first_name}</p>
                   }
                 </div> 
                 <div>
                   <label htmlFor="last_name" className='form-label'>Last Name</label>
-                  <input type="text" value={values.last_name} onChange={handleChange} onBlur={handleBlur} name="last_name" id="last_name" placeholder='Enter your last name' className={`form-input ${errors.last_name && touched.last_name && 'border-error'}`} />
+                  <input type="text" value={values.last_name} onChange={handleChange} onBlur={handleBlur} name="last_name" id="last_name" placeholder='Enter your last name' className={`form-input ${errors.last_name && touched.last_name ? 'border-error' : ''}`} />
                   {
                     errors.last_name && touched.last_name && <p className='font-inter text-sm text-error mt-1'>{errors.last_name}</p>
                   }
@@ -64,7 +64,7 @@ const Contact = () => {
                <input type="email" 
                 value={values.email}
                 onChange={handleChange} onBlur={handleBlur}
-                name="email" id="email" className={`form-input ${errors.email && touched.email && 'border-error'}`} placeholder='yourname@email.com' />
+                name="email" id="email" className={`form-input ${errors.email && touched.email ? 'border-error' : ''}`} placeholder='yourname@email.com' />
                 {
                   errors.email && touched.email && <p className='font-inter text-sm text-error mt-1'>{errors.email}</p>
                 }
@@ -72,7 +72,7 @@ const Contact = () => {
 
              <div className='mb-6'>
                <label htmlFor="message" className='form-label'>Message</label>
-               <textarea name="message" value={values.message} onChange={handleChange} onBlur={handleBlur} id="message" cols="30" rows="5" className={`form-input ${errors.message && touched.message && 'border-error'}`} placeholder="Send me a message and I'll reply you as soon as possible..."  />
+               <textarea name="message" value={values.message} onChange={handleChange} onBlur={handleBlur} id="message" cols="30" rows="5" className={`form-input ${errors.message && touched.message ? 'border-error' : ''}`} placeholder="Send me a message and I'll reply you as soon as possible..."  />
                {
                   errors.message && touched.message && <p className='font-inter text-sm text-error mt-1'>{errors.message}</p>
                 }
