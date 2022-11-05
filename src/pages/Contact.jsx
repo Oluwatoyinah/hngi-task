@@ -160,7 +160,7 @@ const Contact = () => {
                   htmlFor="terms_and_condition"
                   className="font-inter text-base text-gray-600"
                 >
-                  You agree to providing your data to Oluwatoyinah who may
+                  You agree to providing your data to Akinbobola Oluwatoyin who may
                   contact you.
                 </label>
               </div>
