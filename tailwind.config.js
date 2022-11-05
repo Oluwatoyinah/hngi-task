@@ -13,6 +13,7 @@ module.exports = {
       'gray-600': '#475467',
       'gray-700': '#344054',
       'primary-600': '#1570EF',
+      'error': '#F83F23',
     },
     
     fontFamily: {

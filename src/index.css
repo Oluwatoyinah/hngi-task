@@ -27,3 +27,10 @@
       @apply bg-primary-600 py-4 px-5 text-[#fff] font-inter rounded-lg border border-solid border-primary-600 text-base w-full
     }
   }
+
+  .form-btn-disabled {
+    background: #B2DDFF; 
+    border: 1px solid #B2DDFF; 
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+  }
