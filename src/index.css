@@ -3,34 +3,81 @@
 @tailwind utilities;
 
 @layer components {
-    .links {
-      @apply font-inter text-center bg-link-gray py-6 leading-7 text-sm xl:text-lg font-semibold block rounded-lg border-[1px] border-link-gray border-solid h-[70px] hover:bg-[#D0D5DD] transition-all ease-in duration-300
-    }
-
-    .profile-text {
-      @apply text-primary not-italic font-inter leading-[30px] font-bold text-lg xl:text-xl
-    }
-
-    .btns {
-      @apply  sm:py-4 py-3 sm:px-7 px-4 sm:text-lg font-semibold rounded-lg  min-w-[164px] w-full font-inter
-    }
-
-    .form-input {
-      @apply block py-2.5 px-3.5 outline-none border border-solid border-[#D0D5DD] rounded-lg w-full font-inter text-base text-[#667085]
-    }
-
-    .form-label {
-      @apply font-inter text-sm font-medium text-gray-700
-    }
-
-    .form-btn {
-      @apply bg-primary-600 py-4 px-5 text-[#fff] font-inter rounded-lg border border-solid border-primary-600 text-base w-full
-    }
+  .links {
+    @apply font-inter text-center bg-link-gray py-6 leading-7 text-sm xl:text-lg font-semibold block rounded-lg border-[1px] border-link-gray border-solid h-[70px] hover:bg-[#D0D5DD] transition-all ease-in duration-300;
   }
 
-  .form-btn-disabled {
-    background: #B2DDFF; 
-    border: 1px solid #B2DDFF; 
-    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-    border-radius: 8px;
+  .profile-text {
+    @apply text-primary not-italic font-inter leading-[30px] font-bold text-lg xl:text-xl;
   }
+
+  .btns {
+    @apply sm:py-4 py-3 sm:px-7 px-4 sm:text-lg font-semibold rounded-lg  min-w-[164px] w-full font-inter;
+  }
+
+  .form-input {
+    @apply block py-2.5 px-3.5 outline-none border border-solid border-[#D0D5DD] rounded-lg w-full font-inter text-base text-[#667085];
+  }
+
+  .form-label {
+    @apply font-inter text-sm font-medium text-gray-700;
+  }
+
+  .form-btn {
+    @apply bg-primary-600 py-4 px-5 text-[#fff] font-inter rounded-lg border border-solid border-primary-600 text-base w-full;
+  }
+}
+
+.form-btn-disabled {
+  background: #b2ddff;
+  border: 1px solid #b2ddff;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+}
+
+.form-group-check input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.form-group-check label {
+  position: relative;
+  cursor: pointer;
+}
+
+.form-group-check label:before {
+  content: "";
+  -webkit-appearance: none;
+  border: 1px solid #1570ef;
+  box-shadow: 0px 0px 0px 4px #d1e9ff;
+  border-radius: 6px;
+  background-color: #f9fafb;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.form-group-check input:checked + label:before {
+  box-shadow: none;
+}
+
+.form-group-check input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  width: 6px;
+  height: 12px;
+  border: solid #1570ef;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
