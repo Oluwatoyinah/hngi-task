@@ -10,4 +10,20 @@
     .profile-text {
       @apply text-primary not-italic font-inter leading-[30px] font-bold text-lg xl:text-xl
     }
+
+    .btns {
+      @apply  sm:py-4 py-3 sm:px-7 px-4 sm:text-lg font-semibold rounded-lg  min-w-[164px] w-full font-inter
+    }
+
+    .form-input {
+      @apply block py-2.5 px-3.5 outline-none border border-solid border-[#D0D5DD] rounded-lg w-full font-inter text-base text-[#667085]
+    }
+
+    .form-label {
+      @apply font-inter text-sm font-medium text-gray-700
+    }
+
+    .form-btn {
+      @apply bg-primary-600 py-4 px-5 text-[#fff] font-inter rounded-lg border border-solid border-primary-600 text-base w-full
+    }
   }

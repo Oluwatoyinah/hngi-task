@@ -4,12 +4,14 @@ import ErrorPage from './pages/ErrorPage';
 
 import Zuri from './assets/images/zuri-logo.png'
 import I4G from './assets/images/I4G.png'
+import Contact from './pages/Contact';
 
 function App() {
   return (
     <>
       <Routes>
         <Route path='/' element={<Home /> } />
+        <Route path='contact' element={<Contact />} />
         <Route path='*' element={<ErrorPage /> } />
       </Routes>
       

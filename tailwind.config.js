@@ -10,6 +10,9 @@ module.exports = {
       'light-gray': '#667085',
       'primary': '#101828',
       'purple': '#6938EF',
+      'gray-600': '#475467',
+      'gray-700': '#344054',
+      'primary-600': '#1570EF',
     },
     
     fontFamily: {

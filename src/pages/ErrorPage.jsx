@@ -15,13 +15,13 @@ const ErrorPage = () => {
 
                  <div className="buttons flex flex-col-reverse sm:flex-row gap-3 sm:items-center">
                     <Link to='/'>
-                      <button className='flex items-center gap-5 justify-center bg-white sm:py-4 py-3 sm:px-7 px-4 sm:text-lg font-semibold rounded-lg border border-solid border-[#D0D5DD] min-w-[164px] w-full'>
+                      <button className='btns flex items-center gap-5 justify-center bg-white border border-solid border-[#D0D5DD]'>
                         <span><img src={BackIcon} alt="back icon" width="14" /></span>
                         <span>Go back</span>
                       </button>
                     </Link>
                     <Link to='/'>
-                      <button className='bg-purple text-[#fff] sm:py-4 py-3 sm:px-7 px-4 sm:text-lg font-semibold rounded-lg min-w-[164px] w-full'>Take me home</button>
+                      <button className='btns bg-purple text-[#fff]'>Take me home</button>
                     </Link>
                  </div>
             </div>

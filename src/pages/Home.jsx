@@ -1,4 +1,5 @@
 import React from 'react' 
+import { Link } from 'react-router-dom'
 import ProfileImg from '../assets/images/oluwatoyin.jpg'
 import Slack from '../assets/images/slack.png'
 import Github from '../assets/images/github.png'
@@ -68,6 +69,14 @@ const Home = () => {
                                 Design Books
                                 </button>
                             </a>
+                        </li>
+
+                        <li className="mb-6"> 
+                            <Link to='/contact' className='links'>
+                                <button>
+                                Contact Me
+                                </button>
+                            </Link>
                         </li>
                     </ul>
 
